@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trust & Compliance - Athena Tech Solutions</title>
+  <meta name="description" content="Athena Tech Solutions — 15+ years in technology." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Athena Tech Solutions"></a></div>
+      <div>
+        <div style="font-weight:700">Athena Tech Solutions</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:2px">Pvt Ltd • 15+ years in technology</div>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>\n        <a href="services.html">Services</a>\n        <a href="case-studies.html">Case Studies</a>\n        <a href="clients.html">Clients</a>\n        <a href="trust.html" class="active">Trust</a>\n        <a href="contact.html">Contact</a>\n        
+      </nav>
+    </div>
+  </header>
+  <main>
+<section>
+  <div class="container">
+    <h2>Governance & Compliance</h2>
+    <p class="lead">Athena Tech Solutions follows strict governance, audit readiness and compliance frameworks required for government procurement.</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <strong>ISO 27001</strong>
+        <p class="small" style="color:var(--muted)">Information security management system — policies and controls for secure operations.</p>
+      </div>
+      <div class="card">
+        <strong>ISO 9001</strong>
+        <p class="small" style="color:var(--muted)">Quality management — consistent delivery and process maturity.</p>
+      </div>
+      <div class="card">
+        <strong>GeM & Procurement</strong>
+        <p class="small" style="color:var(--muted)">GeM registration & documentation support for bids and tenders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div><strong>Athena Tech Solutions Pvt Ltd</strong><br><span class="small">Registered Office: [Your Address]</span></div>
+      <div class="small">info@athenatechsolutions.com • +91-XXXXXXXXXX</div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var btn = document.querySelector('.menu-toggle');
+    var nav = document.querySelector('.site-nav');
+    if(btn && nav){
+      btn.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+      document.querySelectorAll('.site-nav a').forEach(function(a){
+        a.addEventListener('click', function(){ nav.classList.remove('open'); });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

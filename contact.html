@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Athena Tech Solutions</title>
+  <meta name="description" content="Athena Tech Solutions — 15+ years in technology." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Athena Tech Solutions"></a></div>
+      <div>
+        <div style="font-weight:700">Athena Tech Solutions</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:2px">Pvt Ltd • 15+ years in technology</div>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>\n        <a href="services.html">Services</a>\n        <a href="case-studies.html">Case Studies</a>\n        <a href="clients.html">Clients</a>\n        <a href="trust.html">Trust</a>\n        <a href="contact.html" class="active">Contact</a>\n        
+      </nav>
+    </div>
+  </header>
+  <main>
+<section>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="lead">Book a free 30-minute consultation with our principal architect or send us your project details.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Office</h3>
+        <p class="small" style="color:var(--muted)">[Your Registered Office Address]</p>
+        <p class="small" style="color:var(--muted)">GST: [XXXXX] • PAN: [XXXXX]</p>
+        <p style="margin-top:12px"><strong>Email:</strong> info@athenatechsolutions.com<br><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      </div>
+
+      <div class="card">
+        <h3>Send a message</h3>
+        <form action="<!-- REPLACE: your endpoint or use Netlify/Forms -->" method="post" onsubmit="alert('Hook form to your endpoint');return false;">
+          <div class="row">
+            <input type="text" name="name" placeholder="Full name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <div style="margin-top:10px">
+            <input type="text" name="org" placeholder="Organization / Department">
+          </div>
+          <div style="margin-top:10px">
+            <select name="service">
+              <option value="">Interested service</option>
+              <option>Application Modernization</option>
+              <option>Cloud Migration</option>
+              <option>Mobile & Web</option>
+              <option>DevOps & CI/CD</option>
+              <option>Security & Compliance</option>
+            </select>
+          </div>
+          <div style="margin-top:10px">
+            <textarea name="message" rows="6" placeholder="Brief project description" required></textarea>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:12px;align-items:center;justify-content:flex-end">
+            <button type="submit">Request Consultation</button>
+            <div class="small" style="color:var(--muted)"><strong>Email:</strong> info@athenatechsolutions.com</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div><strong>Athena Tech Solutions Pvt Ltd</strong><br><span class="small">Registered Office: [Your Address]</span></div>
+      <div class="small">info@athenatechsolutions.com • +91-XXXXXXXXXX</div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var btn = document.querySelector('.menu-toggle');
+    var nav = document.querySelector('.site-nav');
+    if(btn && nav){
+      btn.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+      document.querySelectorAll('.site-nav a').forEach(function(a){
+        a.addEventListener('click', function(){ nav.classList.remove('open'); });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

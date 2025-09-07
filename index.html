@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - Athena Tech Solutions</title>
+  <meta name="description" content="Athena Tech Solutions — 15+ years in technology." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Athena Tech Solutions"></a></div>
+      <div>
+        <div style="font-weight:700">Athena Tech Solutions</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:2px">Pvt Ltd • 15+ years in technology</div>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="clients.html">Clients</a>
+        <a href="trust.html">Trust</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    </div>
+  </header>
+  <main>
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <h1 id="hero-heading">Modernize legacy systems. Build secure, scalable platforms.</h1>
+    <p class="lead">Athena Tech Solutions combines 15+ years of technology leadership with hands-on engineering to modernize critical systems, migrate applications to cloud, build citizen-centric mobile and web platforms, and secure infrastructure for government and enterprise clients.</p>
+    <div class="cta">
+      <a class="btn" href="contact.html">Request Consultation</a>
+      <a class="btn-ghost" href="case-studies.html">View Case Studies</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>What we do</h2>
+    <p class="lead">End-to-end technology services focusing on modernization, migration, development and governance.</p>
+
+    <div class="services-grid">
+      <a class="service-card" href="services.html" style="text-decoration:none;color:inherit">
+        <div class="service-icon">🛠</div>
+        <div class="service-title">Application Modernization</div>
+        <div class="service-desc">Re-architect monoliths into microservices and cloud-native systems.</div>
+        <div style="margin-top:8px;color:var(--muted)">Explore</div>
+      </a>
+
+      <a class="service-card" href="services.html" style="text-decoration:none;color:inherit">
+        <div class="service-icon">☁️</div>
+        <div class="service-title">Cloud Migration</div>
+        <div class="service-desc">Secure migrations to AWS, Azure, and GCP with governance and cost control.</div>
+        <div style="margin-top:8px;color:var(--muted)">Explore</div>
+      </a>
+
+      <a class="service-card" href="services.html" style="text-decoration:none;color:inherit">
+        <div class="service-icon">📱</div>
+        <div class="service-title">Mobile & Web</div>
+        <div class="service-desc">Citizen-facing portals, multilingual mobile apps, and responsive dashboards.</div>
+        <div style="margin-top:8px;color:var(--muted)">Explore</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Selected Case Studies</h2>
+    <p class="lead">Short examples of measurable outcomes.</p>
+    <div class="grid">
+      <div class="card">
+        <img class="case-img" src="images/cloudmigration.png" alt="Cloud migration">
+        <strong>Legacy HR Portal → Cloud Native</strong>
+        <p>70% faster deployments, 40% infra cost savings.</p>
+      </div>
+      <div class="card">
+        <img class="case-img" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1200&auto=format&fit=crop" alt="Mobile app">
+        <strong>Citizen Grievance App</strong>
+        <p>35% faster resolution via multilingual mobile app.</p>
+      </div>
+      <div class="card">
+        <img class="case-img" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop" alt="DevOps pipelines">
+        <strong>DevOps for PSU</strong>
+        <p>Release cycles reduced from months to weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div><strong>Athena Tech Solutions Pvt Ltd</strong><br><span class="small">Registered Office: [Your Address]</span></div>
+      <div class="small">info@athenatechsolutions.com • +91-XXXXXXXXXX</div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var btn = document.querySelector('.menu-toggle');
+    var nav = document.querySelector('.site-nav');
+    if(btn && nav){
+      btn.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+      document.querySelectorAll('.site-nav a').forEach(function(a){
+        a.addEventListener('click', function(){ nav.classList.remove('open'); });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services - Athena Tech Solutions</title>
+  <meta name="description" content="Athena Tech Solutions — 15+ years in technology." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Athena Tech Solutions"></a></div>
+      <div>
+        <div style="font-weight:700">Athena Tech Solutions</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:2px">Pvt Ltd • 15+ years in technology</div>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="clients.html">Clients</a>
+            <a href="trust.html">Trust</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+  </header>
+  <main>
+<section>
+  <div class="container">
+    <h2>Services</h2>
+    <p class="lead">Deep technical capabilities across the software delivery lifecycle. We work with government and enterprise clients to deliver secure, auditable, and maintainable systems.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🛠</div>
+        <div class="service-title">Application Modernization</div>
+        <div class="service-desc">Comprehensive modernization—analysis, incremental refactor, microservices, API strategy.</div>
+        <ul class="service-list">
+          <li>Assessment & roadmap</li>
+          <li>Strangler pattern & refactor</li>
+          <li>API strategy & integration</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <div class="service-title">Cloud Migration & Platform</div>
+        <div class="service-desc">Secure cloud migrations, cost and governance, hybrid-cloud architecture.</div>
+        <ul class="service-list">
+          <li>Lift & shift / replatform</li>
+          <li>IaC: Terraform & CloudFormation</li>
+          <li>Backup & DR</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <div class="service-title">Mobile & Web Applications</div>
+        <div class="service-desc">User-first apps, PWAs, multilingual citizen portals, dashboarding & analytics.</div>
+        <ul class="service-list">
+          <li>Flutter / React Native</li>
+          <li>Responsive web & PWA</li>
+          <li>Accessibility & localization</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <div class="service-title">DevOps & CI/CD</div>
+        <div class="service-desc">Platform engineering with GitOps, automated pipelines, testing & observability.</div>
+        <ul class="service-list">
+          <li>CI/CD pipelines & automation</li>
+          <li>Kubernetes & serverless</li>
+          <li>Monitoring & runbooks</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔒</div>
+        <div class="service-title">Cybersecurity & Compliance</div>
+        <div class="service-desc">Security-first delivery: pen tests, IAM, compliance with government standards.</div>
+        <ul class="service-list">
+          <li>Threat modelling & pen tests</li>
+          <li>IAM & secure SDLC</li>
+          <li>ISO & audit support</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔁</div>
+        <div class="service-title">Managed Services</div>
+        <div class="service-desc">SLA-backed support, incident response, patching and cost optimization.</div>
+        <ul class="service-list">
+          <li>24/7 support & AMCs</li>
+          <li>Patch & release management</li>
+          <li>Capacity planning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div><strong>Athena Tech Solutions Pvt Ltd</strong><br><span class="small">Registered Office: [Your Address]</span></div>
+      <div class="small">info@athenatechsolutions.com • +91-XXXXXXXXXX</div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var btn = document.querySelector('.menu-toggle');
+    var nav = document.querySelector('.site-nav');
+    if(btn && nav){
+      btn.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+      document.querySelectorAll('.site-nav a').forEach(function(a){
+        a.addEventListener('click', function(){ nav.classList.remove('open'); });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
